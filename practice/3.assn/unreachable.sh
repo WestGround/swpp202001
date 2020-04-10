@@ -22,9 +22,11 @@ if [ "$1" != "run" ]; then
   CXXFLAGS=`$LLVMCONFIG --cxxflags`
   LDFLAGS=`$LLVMCONFIG --ldflags`
   LIBS=`$LLVMCONFIG --libs core irreader bitreader support --system-libs`
+  SRCROOT=`$LLVMCONFIG --src-root`
 
   CXX=$2/clang++
-  CXXFLAGS="$CXXFLAGS -std=c++17"
+  CXXFLAGS="$CXXFLAGS -std=c++17 -I\"${SRCROOT}/include\""
+  #CXXFLAGS="$CXXFLAGS -std=c++17"
   set -e
 
   $CXX $ISYSROOT $CXXFLAGS $LDFLAGS $LIBS unreachable.cpp -o ./libUnreachable$EXT -shared
