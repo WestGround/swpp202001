@@ -12,6 +12,8 @@
 
 ## Projects
 
+- Apr. 13th: Check the [issue](https://github.com/snu-sf-class/swpp202001/issues/3) for making up project teams.
+
 ## Assignments
 
 - Mar. 19th: Assignment 1 is announced. See here: https://github.com/aqjune/swpp202001-assn1
@@ -31,3 +33,10 @@ NOTE: The `Failed to load passes from ...` error at `3.materials/run-passes.sh` 
 Special thanks to Woosung Song.
 
 NOTE 2: N in `polygon` is not larger than 100. input5.txt's answer was incorrect and fixed (thanks to Jeyeon Si). Block names in `unreachable`'s inputs are always lower-case alphabets.
+
+- Apr. 14th: Assignment 4 is announced. Deadline is Apr. 21th, midnight. Late penalty is 10% per day.
+
+NOTE: `fillundef.cpp` had bugs regarding the type of undef value / the way how
+uses are iterated. Now fixed.
+
+NOTE 2: Added [FAQ.md](practice/4.assn/FAQ.md).
