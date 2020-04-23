@@ -179,6 +179,27 @@ If branch condition is a constant, it shouldn't be constant expression.
 
 4. They should not have unreachable blocks.
 
+Apr. 20: We have one more constraint to guarantee that there is only one
+possible output.
+
+5. If an `icmp` instruction is used by a conditional branch `br`, the conditional
+branch and the `icmp` should be in the same basic block.
+
+```
+BB:
+  %cond = icmp eq %x, %y
+  br label %BB2
+BB2:
+  br i1 %cond, ..    // not okay
+
+BB3:
+  %cond3 = icmp eq %x, %y
+  br li1 %cond3, ..  // okay
+```
+
+Note that all checks that are going to be used to grade your program will
+satisfy these constraints.
+
 #### Hints
 
 - Please see how tests are written in data/ directory.
