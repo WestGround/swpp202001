@@ -29,7 +29,7 @@ if [[ "$1" == "build" || "$1" == "all" ]]; then
   CXXFLAGS="$CXXFLAGS -I${SRCROOT}/utils/unittest/googletest/"
   set -e
 
-  $CXX $ISYSROOT $CXXFLAGS $LDFLAGS $LIBS simpleTest.cpp \
+  $CXX $ISYSROOT $CXXFLAGS $LDFLAGS $LIBS simpleTest.cpp -lpthread -lm \
        $SRCROOT/utils/unittest/googletest/src/gtest-all.cc \
        -o simpleTest
 fi

@@ -29,13 +29,13 @@ if [[ "$1" == "build" || "$1" == "all" ]]; then
   CXXFLAGS="$CXXFLAGS -I${SRCROOT}/utils/unittest/googletest/"
   set -e
 
-  $CXX $ISYSROOT $CXXFLAGS $LDFLAGS $LIBS aliasAnalysisTest.cpp -lpthread -lm \
+  $CXX $ISYSROOT $CXXFLAGS $LDFLAGS $LIBS allocType.cpp allocTypeTest.cpp -lpthread -lm \
        $SRCROOT/utils/unittest/googletest/src/gtest-all.cc \
-       -o aliasAnalysisTest
+       -o allocTypeTest
 fi
 
 if [[ "$1" == "run" || "$1" == "all" ]]; then
   echo "----- run -----"
   set +e
-  ./aliasAnalysisTest
+  ./allocTypeTest
 fi

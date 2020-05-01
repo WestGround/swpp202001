@@ -24,6 +24,33 @@ input programs, see [project/spec.pdf](project/spec.pdf).
 
 - Apr. 23: The way how a program inputs/outputs is updated. See [project/spec.pdf](project/spec.pdf).
 
+- Apr. 28: On Thursday, we'll upload a video+document about optimizations. This video+document will contain:
+
+    - More optimizations that might be helpful
+
+    - LLVM libraries that can be helpful for implementing the existing optimizations
+
+    You can implement optimizations that already exist in LLVM, but it should not be just blind copy-and-paste; On Thursday, we'll give you a guideline on how to use existing LLVM libraries to implement them. For each sprint, one person (who is different from the previous sprint) in a team can be dedicated to implementing the existing optimizations.
+
+- Apr. 28: Assembly syntax (correct function/block name, comment, assert\_eq) and semantics (memory initialization) is updated.
+See [project/spec.pdf](project/spec.pdf).
+
+- Apr. 28: Please read [project/document.pdf](project/document.pdf) to see the
+documents that you need to submit before/during the team project.
+
+- Apr. 30: Binary operators / Integer comparisons now take the size of bitwidth of inputs (needed for correct evaluation of signed operations).
+The result is zero-extended. See [project/spec.pdf](project/spec.pdf).
+
+- Apr. 30: The skeleton for team project is announced: https://github.com/snu-sf-class/swpp202001-compiler.git .
+
+- Apr. 30: Add some guidline for documentation. See update in [project/document.pdf](project/document.pdf).
+
+- Apr. 30: Please make a team repository and add TAs as collaborators. see [issue 11](https://github.com/snu-sf-class/swpp202001/issues/11).
+
+- Apr. 30: [project/optList.md](project/optList.md) contains the list of optimizations discussed so far & LLVM passes that will be helpful for their implementation.
+
+- May. 1: We made a FAQ list for the team project document here: [issue 12](https://github.com/snu-sf-class/swpp202001/issues/12)
+
 ## Assignments
 
 - Mar. 19: Assignment 1 is announced. See here: https://github.com/aqjune/swpp202001-assn1
@@ -58,3 +85,7 @@ uses are iterated. Now fixed.
 possible output. Please see the updated README.md of assignment 4.
 
 - Apr. 22: We'll accept late submissions of assignment 4 by this Thursday (Apr. 23). 
+
+- Apr. 24: Assignment 5 is announced. Deadline is May. 5 (11:59 pm). You can use
+[issue 8](https://github.com/snu-sf-class/swpp202001/issues/8) and
+[issue 9](https://github.com/snu-sf-class/swpp202001/issues/9) to ask questions.
