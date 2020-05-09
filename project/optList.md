@@ -46,7 +46,7 @@ There is a relevant optimization: GlobalOptPass , include/llvm/Transforms/IPO/Gl
 
 #### 7. Using `sp` register
 
-- You'll need to update AssemblyWriter to support this.
+- You'll need to update ~~AssemblyWriter~~AssemblyEmitter.cpp at the project skeleton to support this.
 
 ---
 
